@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* css variables */
+:root {
+  --primary-color: #f2f0ee;
+  --dark: #2b2929;
+  --link: #d1412a;
+  --accent: #d8c7b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  /* using the variable in css */
+  /* background-color: var(--primary-color); */
+  width: 80%;
+  margin: 0 auto;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-items {
+  margin-right: 20px;
+}
+
+/* pseudo selectors */
+.menu-items:last-child {
+  margin-right: 0px;
+}
+
+/* here we'll target the hero section content and the side image */
+
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content > h1 {
+  font-size: 52px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px 0;
+  background-color: #2b2929;
+  color: var(--primary-color);
+}
+
+.btn:focus {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+.right-section {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section > img {
+  transition: 0.3s;
+  width: 400px;
+  border-radius: 100%;
+}
+
+.right-section > img:hover,
+.card:hover,
+.about:hover {
+  transition: 0.3s;
+  box-shadow: 20px 20px var(--dark);
+}
+
+.about > h2 {
+  margin: 30px 0;
+}
+
+/* about */
+.about {
+  transition: 0.3s;
+  background-color: var(--accent);
+  padding: 20px;
+  width: 80%;
+  border-radius: 20px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about > p {
+  /* width of any element */
+  width: 700px;
+}
+
+.my-image {
+  margin: 40px 0;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.work {
+  width: 100%;
+  height: 100vh;
+}
+
+.work > h2 {
+  margin: 40px 0;
+}
+
+.card-group {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid var(--dark);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.card > img {
+  width: 30px;
+}
+
+.footer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 600px;
+  height: 200px;
+  background-color: var(--accent);
+}
+
+.input-field {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+span {
+  display: block;
+  font-size: 12px;
+}
+
+.footer > h3 {
+  margin: 40px 0;
+}
+
+.socials {
+  margin: 40px 0;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials > a {
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
